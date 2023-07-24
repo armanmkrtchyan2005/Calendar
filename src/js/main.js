@@ -1,11 +1,21 @@
 import "../scss/styles.scss";
 import { Calendar } from "fullcalendar";
+import { sleep } from "./sleep";
+
+const TIME = 2000;
 
 var calendarEl = document.getElementById("calendar");
 const json = document.getElementById("json");
-console.log(json);
 
 const eventsData = JSON.parse(json.textContent);
+
+$("#preload").css({ display: "flex" });
+$("#calendar").css({ display: "none" });
+
+await sleep(TIME);
+
+$("#preload").css({ display: "none" });
+$("#calendar").css({ display: "flex" });
 
 var date = new Date();
 var d = date.getDate();

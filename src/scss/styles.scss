@@ -1,7 +1,11 @@
-// Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
 #calendar {
   width: 100%;
   height: 100vh;
+}
+
+#preload > div {
+  width: 5rem;
+  height: 5rem;
 }
