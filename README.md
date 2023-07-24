@@ -1,15 +1,13 @@
 In the project directory, you can run:
-
-### `npm install`
-
+```
+npm install
+```
 For install all packages
-
-### `npm run dev`
-
+```
+npm run dev
+```
 For run dev server
-
-### `npm run build`
-
+```
+npm run build
+```
 For build project
-
-
